@@ -12,7 +12,11 @@ const binValue = document.querySelector('#binary-number');
 
 const convertBinToDec = () => {
     let binDigit = bin.value;
+    
+    
+    
     decValue.innerHTML = parseInt(binDigit,2);
+
     
     bin.value = '';
 
