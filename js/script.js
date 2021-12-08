@@ -12,12 +12,18 @@ const binValue = document.querySelector('#binary-number');
 
 const convertBinToDec = () => {
     let binDigit = bin.value;
-    
-    
-    
-    decValue.innerHTML = parseInt(binDigit,2);
+    let binArr = Array.from(binDigit);
 
-    
+    binArr.forEach((val)=>{
+        if(val > 1) {
+            alert('Enter Combinations of zeros(0)s and one(1)')
+        }
+        else {
+            decValue.innerHTML = parseInt(binDigit,2);
+        }
+    })
+
+
     bin.value = '';
 
 }
